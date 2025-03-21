@@ -7,10 +7,6 @@ import uuid
 
 import streamlit as st
 
-st.write("API Key found:", "OPENAI_API_KEY" in st.secrets)
-st.write("API Key value:", st.secrets.get("OPENAI_API_KEY", "No API Key found!"))
-
-
 from langchain.chat_models import ChatOpenAI
 from langchain.vectorstores import AstraDB
 from langchain.embeddings import OpenAIEmbeddings
